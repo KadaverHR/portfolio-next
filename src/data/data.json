@@ -1,0 +1,56 @@
+{
+  "myStack": [
+    {
+      "title": "html",
+      "icon": "devicon-html5-plain-wordmark",
+      "paralax": 0.3
+    },
+    {
+      "title": "Sass",
+      "icon": "devicon-sass-original",
+      "paralax": 0.2
+    },
+    {
+      "title": "Git",
+      "icon": "devicon-git-plain",
+      "paralax": 0.1
+    },
+    {
+      "title": "Figma",
+      "icon": "devicon-figma-plain",
+      "paralax": 0.2
+    },
+    {
+      "title": "JavaScript",
+      "icon": "devicon-javascript-plain",
+      "paralax": 0.3
+    }
+  ],
+  "siteName": "Портфолио",
+"bannerContentList": [
+    {
+      "text": "Честно пишет &lt;div&gt; вместо &lt;article&gt;, но краснеет при этом",
+      "img": "/img/sry.svg",
+      "highlights": [
+        { "word": "&lt;div&gt;" },
+        { "word": "&lt;article&gt;" }
+      ]
+    },
+    {
+      "text": "Верит, что «адаптив придумаю потом» — валидная стратегия.",
+      "img": "/img/no.svg",
+      "highlights": [
+        { "word": "«адаптив придумаю потом»" }
+      ]
+    },
+    {
+      "text": "Уверена, что !important — это не грех, а крик души.",
+      "img": "/img/wow.svg",
+      "highlights": [
+        { "word": "!important" }
+      ]
+    }
+  ],
+  "bannerTitle": "Я Наташа - HTML-верcтальщик",
+  "bannerSubtitle": "Тот тип верстальщика, который:"
+}
