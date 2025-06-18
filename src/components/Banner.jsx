@@ -3,7 +3,7 @@
 import { MouseParallax } from 'react-just-parallax';
 import Image from 'next/image';
 import data from '@/data/data.json';
-import '/Banner.module.sass';
+import './Banner.module.sass';
 
 function Banner() {
   // Random function for parallax strength
