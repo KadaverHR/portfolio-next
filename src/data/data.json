@@ -3,27 +3,27 @@
     {
       "title": "html",
       "icon": "devicon-html5-plain-wordmark",
-      "paralax": 0.3
+      "paralax": 0.03
     },
     {
       "title": "Sass",
       "icon": "devicon-sass-original",
-      "paralax": 0.2
+      "paralax": 0.02
     },
     {
       "title": "Git",
       "icon": "devicon-git-plain",
-      "paralax": 0.1
+      "paralax": 0.01
     },
     {
       "title": "Figma",
       "icon": "devicon-figma-plain",
-      "paralax": 0.2
+      "paralax": 0.02
     },
     {
       "title": "JavaScript",
       "icon": "devicon-javascript-plain",
-      "paralax": 0.3
+      "paralax": 0.03
     }
   ],
   "siteName": "Портфолио",
