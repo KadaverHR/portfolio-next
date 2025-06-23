@@ -1,4 +1,4 @@
-import './styles/main.sass';
+import '@/app/global.sass'
 
 export const metadata = {
   title: 'Портфолио',
