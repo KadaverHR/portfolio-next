@@ -1,7 +1,7 @@
 "use client";
 
 import { MouseParallax } from "react-just-parallax";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, useLayoutEffect } from "react";
 import Image from "next/image";
 import data from "@/data/data.json";
 import styles from "./banner.module.sass";
@@ -40,6 +40,11 @@ function Banner() {
       window.removeEventListener("resize", updateWidth);
       observer.disconnect();
     };
+  }, []);
+
+  useLayoutEffect(() => {
+    console.log(containerRef.current.offsetWidth);
+    
   }, []);
 
   const highlightText = (text, highlights) => {
