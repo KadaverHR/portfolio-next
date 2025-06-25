@@ -1,54 +1,68 @@
 {
+  "imgs": {
+    "banner": [
+      {
+        "pers": {
+          "src": "/img/main.png",
+          "alt": "pers"
+        }
+      },
+      {
+        "arrow": {
+          "src": "/img/arrow.png"
+        }
+      },
+      {
+        "decoration": {
+          "src": "/img/decoration.svg",
+          "alt": "decoration"
+        }
+      }
+    ]
+  },
   "myStack": [
     {
-      "title": "html",
-      "icon": "devicon-html5-plain-wordmark",
+      "title": "HTML",
+      "icon": "/img/html.svg",
       "paralax": 0.03
     },
     {
       "title": "Sass",
-      "icon": "devicon-sass-original",
+      "icon": "/img/sass.svg",
       "paralax": 0.02
     },
     {
       "title": "Git",
-      "icon": "devicon-git-plain",
+      "icon": "/img/git.svg",
       "paralax": 0.01
     },
     {
       "title": "Figma",
-      "icon": "devicon-figma-plain",
+      "icon": "/img/figma.svg",
       "paralax": 0.02
     },
     {
       "title": "JavaScript",
-      "icon": "devicon-javascript-plain",
+      "icon": "/img/js.svg",
       "paralax": 0.03
     }
   ],
   "siteName": "Портфолио",
-"bannerContentList": [
+  "bannerContentList": [
     {
       "text": "Честно пишет &lt;div&gt; вместо &lt;article&gt;, но краснеет при этом",
-      "img": "/img/sry.svg",
-      "highlights": [
-        { "word": "&lt;div&gt;" },
-        { "word": "&lt;article&gt;" }
-      ]
+      "img": "/img/arrow.png",
+      "highlights": [{ "word": "&lt;div&gt;" }, { "word": "&lt;article&gt;" }]
     },
     {
       "text": "Верит, что «адаптив придумаю потом» — валидная стратегия.",
-      "img": "/img/no.svg",
-      "highlights": [
-        { "word": "«адаптив придумаю потом»" }
-      ]
+      "img": "/img/arrow.png",
+      "highlights": [{ "word": "«адаптив придумаю потом»" }]
     },
     {
       "text": "Уверена, что !important — это не грех, а крик души.",
-      "img": "/img/wow.svg",
-      "highlights": [
-        { "word": "!important" }
-      ]
+      "img": "/img/arrow.png",
+      "highlights": [{ "word": "!important" }]
     }
   ],
   "bannerTitle": "Я Наташа - HTML-верcтальщик",

@@ -4,7 +4,7 @@ import { MouseParallax } from "react-just-parallax";
 import { useRef, useEffect, useState, useLayoutEffect } from "react";
 import Image from "next/image";
 import data from "@/data/data.json";
-import styles from "./banner.module.sass";
+import styles from "@/components/Banner.module.sass";
 
 function Banner() {
   //cчитаем ширину баннера для анимации
@@ -14,7 +14,6 @@ function Banner() {
   const [ready, setReady] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
-
 
   const handleMouseEnter = () => {
     setIsVisible(true);
@@ -26,12 +25,10 @@ function Banner() {
 
   const handleMouseMove = (event) => {
     setPosition({
-      x: event.clientX+30,
-      y: event.clientY+50,
+      x: event.clientX + 30,
+      y: event.clientY + 50,
     });
   };
-
-
 
   const updateWidth = () => {
     if (containerRef.current && contentRef.current) {
@@ -62,8 +59,6 @@ function Banner() {
     };
   }, []);
 
-
-
   const highlightText = (text, highlights) => {
     let highlightedText = text;
     highlights.forEach(({ word }) => {
@@ -77,10 +72,6 @@ function Banner() {
       );
     });
     return <span dangerouslySetInnerHTML={{ __html: highlightedText }} />;
-  };
-
-  const handleBlurBannerLink = () => {
-    document.querySelector(".bubble").style.display = "grid";
   };
 
   return (
@@ -97,8 +88,8 @@ function Banner() {
                   <Image
                     src={item.img}
                     alt=""
-                    width={24}
-                    height={24}
+                    width={40}
+                    height={15}
                     style={{ objectFit: "contain" }}
                   />
                   <p className={styles.contentitem}>
@@ -108,11 +99,13 @@ function Banner() {
               ))}
             </ul>
 
-            <a onMouseEnter={handleMouseEnter}
+            <a
+              onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               onMouseMove={handleMouseMove}
               className={styles.contactMe}
-              href="mailto:{ich@hasslich.ru">
+              href="mailto:{ich@hasslich.ru"
+            >
               Свяжись со мной
               {isVisible && (
                 <div
@@ -122,11 +115,16 @@ function Banner() {
                     top: `${position.y}px`,
                   }}
                 >
-                  <img src="img/plz.png" alt="" />
+                  <Image
+                    height={30}
+                    width={197}
+                    src="/img/plz.png"
+                    alt="ну пожалуйста"
+                    className="bubble"
+                  />
                 </div>
               )}
             </a>
-
           </div>
           <div
             className={styles.scene}
@@ -152,15 +150,15 @@ function Banner() {
                         index === 1
                           ? "-60px"
                           : index === 2
-                            ? "-80px"
-                            : index === 3
-                              ? "-60px"
-                              : index === 4
-                                ? "-40px"
-                                : "0",
+                          ? "-80px"
+                          : index === 3
+                          ? "-60px"
+                          : index === 4
+                          ? "-40px"
+                          : "0",
                     }}
                   >
-                    <i className={item.icon}></i>
+                    <Image src={item.icon} alt="" width={30} height={30} />
                     <p>{item.title}</p>
                   </div>
                 </MouseParallax>
@@ -189,11 +187,36 @@ function Banner() {
               <div className={styles.imgbox}>
                 <Image
                   className={styles.img}
-                  src="/img/main.png"
-                  alt="Main Image"
+                  priority
+                  src={data?.imgs?.banner?.find((item) => item.pers)?.pers.src}
+                  alt={data?.imgs?.banner?.find((item) => item.pers)?.pers.alt}
                   width={374}
                   height={600}
                   style={{ objectFit: "cover" }}
+                />
+              </div>
+            </MouseParallax>
+            <MouseParallax
+              strength={0.04}
+              lerpEase={0.06}
+              enableOnTouchDevice={true}
+              isHorizontal={true}
+              isVertical={true}
+              isAbsolutelyPositioned={true}
+            >
+              <div className={styles.decoration}>
+                <Image
+                  className={styles.decoration}
+                  src={
+                    data?.imgs?.banner?.find((item) => item.decoration)
+                      ?.decoration.src
+                  }
+                  alt={
+                    data?.imgs?.banner?.find((item) => item.decoration)
+                      ?.decoration.alt
+                  }
+                  width={156}
+                  height={264}
                 />
               </div>
             </MouseParallax>

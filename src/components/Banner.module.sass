@@ -54,7 +54,7 @@
 .contentmarker
   display: grid
   grid-auto-flow: column
-  align-items: center
+  align-items: start
   gap: 10px
   justify-content: start
 
@@ -62,11 +62,9 @@
   display: grid
   position: absolute
   gap: 44px
-  justify-items: end
   top: 50%
   transform: translateY(-50%)
   z-index: 20
-  left: -14px
 
 .stackitem
   background: linear-gradient(135deg, #414141 0%, #2d2d2d 100%)
@@ -77,20 +75,16 @@
   display: grid
   grid-auto-flow: column
   align-items: center
+  justify-content:  start
   gap: 10px
   position: relative
+  width: fit-content
   z-index: 20
-
-  i
-    font-weight: 300
-    font-size: 30px
-    color: $text-color
-
   p
-    font-family: 'NeueMachinaSans', sans-serif
+    font-family: $font-main, sans-serif
     font-weight: 300
-    font-size: 20px
-    color: $text-color
+    font-size: 18px
+    color: #e4e4e4
 
 .circlebox
   position: absolute
@@ -107,7 +101,17 @@
   border: 67px solid $banner-color
   bottom: -56px
   z-index: 11
-
+.decoration
+  position: absolute
+  display: grid
+  justify-content: center
+  align-items: center
+  height: 264px
+  width: 156px
+  top: 50%
+  transform: translateY(-50%)
+  right: 66px
+  z-index: 12
 .imgbox
   position: absolute
   display: grid
@@ -115,8 +119,8 @@
   align-items: center
   width: 374px
   height: 100%
-  bottom: 0
-  left: 30px
+  bottom: 14px
+  left: -22px
   z-index: 12
 .img
   position: relative
@@ -149,10 +153,11 @@
   pointer-events: none
   transform: translate(-50%, -50%)
   user-select: none
-  img
-    max-height: 30px
-    width: 100%
-    object-fit: cover
+.bubble
+  max-height: 30px
+  width: 100%
+  object-fit: cover
+  transition: opacity 0.3s ease
 
 @media (max-width: $s)
   .banner
