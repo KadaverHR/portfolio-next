@@ -2,7 +2,6 @@
 
 import '@/app/styles/main.sass';
 import dynamic from 'next/dynamic';
-import { lazy } from 'react';
 import { Suspense } from 'react';
 
 const Banner = dynamic(() => import('@/components/Banner'), {

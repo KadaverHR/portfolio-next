@@ -12,6 +12,26 @@ function Banner() {
   const contentRef = useRef(null);
   const [sceneWidth, setSceneWidth] = useState(0);
   const [ready, setReady] = useState(false);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [isVisible, setIsVisible] = useState(false);
+
+
+  const handleMouseEnter = () => {
+    setIsVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsVisible(false);
+  };
+
+  const handleMouseMove = (event) => {
+    setPosition({
+      x: event.clientX+30,
+      y: event.clientY+50,
+    });
+  };
+
+
 
   const updateWidth = () => {
     if (containerRef.current && contentRef.current) {
@@ -42,10 +62,7 @@ function Banner() {
     };
   }, []);
 
-  useLayoutEffect(() => {
-    console.log(containerRef.current.offsetWidth);
-    
-  }, []);
+
 
   const highlightText = (text, highlights) => {
     let highlightedText = text;
@@ -56,10 +73,14 @@ function Banner() {
       );
       highlightedText = highlightedText.replace(
         regex,
-        `<span class="highlight">$1</span>`
+        `<span style="color: #B564D4">$1</span>`
       );
     });
     return <span dangerouslySetInnerHTML={{ __html: highlightedText }} />;
+  };
+
+  const handleBlurBannerLink = () => {
+    document.querySelector(".bubble").style.display = "grid";
   };
 
   return (
@@ -86,6 +107,26 @@ function Banner() {
                 </li>
               ))}
             </ul>
+
+            <a onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              onMouseMove={handleMouseMove}
+              className={styles.contactMe}
+              href="mailto:{ich@hasslich.ru">
+              Свяжись со мной
+              {isVisible && (
+                <div
+                  className={styles.follower}
+                  style={{
+                    left: `${position.x}px`,
+                    top: `${position.y}px`,
+                  }}
+                >
+                  <img src="img/plz.png" alt="" />
+                </div>
+              )}
+            </a>
+
           </div>
           <div
             className={styles.scene}
@@ -99,7 +140,7 @@ function Banner() {
                 <MouseParallax
                   key={`stack-${index}`}
                   strength={item.paralax}
-                  lerpEase={0.01}
+                  lerpEase={0.03}
                   enableOnTouchDevice={true}
                   isHorizontal={true}
                   isVertical={true}
@@ -111,12 +152,12 @@ function Banner() {
                         index === 1
                           ? "-60px"
                           : index === 2
-                          ? "-80px"
-                          : index === 3
-                          ? "-60px"
-                          : index === 4
-                          ? "-40px"
-                          : "0",
+                            ? "-80px"
+                            : index === 3
+                              ? "-60px"
+                              : index === 4
+                                ? "-40px"
+                                : "0",
                     }}
                   >
                     <i className={item.icon}></i>
@@ -127,7 +168,7 @@ function Banner() {
             </div>
             <MouseParallax
               strength={0.03}
-              lerpEase={0.07}
+              lerpEase={0.05}
               enableOnTouchDevice={true}
               isHorizontal={true}
               isVertical={false}
@@ -138,8 +179,8 @@ function Banner() {
               </div>
             </MouseParallax>
             <MouseParallax
-              strength={0.07}
-              lerpEase={0.01}
+              strength={0.03}
+              lerpEase={0.07}
               enableOnTouchDevice={true}
               isHorizontal={true}
               isVertical={true}
