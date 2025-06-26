@@ -1,0 +1,86 @@
+@use '../styles/variables' as * 
+
+.about
+  display: grid
+  background: $grey-gradient
+  padding: 40px 0
+.title
+  font-family: $font-main, sans-serif
+  font-weight: 400
+  font-size: 48px
+  color: $lime-color
+  display: grid
+  position: relative
+  justify-content: center
+  bottom: -24px
+.content
+  border-radius: 14px
+  background: $dark-grey
+  padding: 35px
+  display: grid
+  justify-content: center
+  max-width: 576px
+  justify-self: center
+  gap: 20px
+.text
+  font-weight: 300
+  font-size: 20px
+  text-align: center
+  color: $white
+.textgray
+  font-weight: 300
+  font-size: 20px
+  text-align: center
+  color: $grey-text
+.stacktitle
+  font-family: $font-main, sans-serif
+  font-weight: 600
+  font-size: 20px
+  line-height: 120%
+  letter-spacing: 0.01em
+  color: $banner-color
+  display: grid
+  justify-self: center
+  justify-content: center
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    left: -50px
+    width: 40px
+    height: 100%
+    object-fit: cover
+    background: url('/img/star.svg') no-repeat center center
+    background-size: contain
+.stackitem
+  display: grid
+  position: relative
+  grid-template-columns: 26px 1fr
+  gap: 10px
+  align-items: start
+  padding-left: 100px
+  &::before
+    content: ""
+    position: relative
+    top: -4px
+    width: 26px
+    height: 100%
+    object-fit: cover
+    background: url(/img/marker.svg) no-repeat top center
+    background-size: contain
+  &:nth-child(1), &:nth-child(2), &:nth-child(3)
+    padding-left: 0
+.stackbox
+  display: grid
+  gap: 20px
+.stacklist
+  display: grid
+  gap: 20px
+.itemtext
+  font-weight: 300
+  font-size: 20px
+  text-align: justify
+  color: $white
+.itemtitle
+  padding-right: 5px
+  color: $lime-color

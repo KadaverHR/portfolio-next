@@ -1,0 +1,38 @@
+@use '../styles/variables' as * 
+
+.header
+  display: grid
+.box
+  display: grid
+  grid-template-columns: 100px 1fr
+  align-items: center
+  gap: calc((100% - 100px) / 3 )
+  justify-content: space-between
+  padding: 20px 0
+.nav 
+  display: grid
+  grid-auto-flow: column
+  gap: 40px
+  justify-content: space-between
+  &__link 
+    font-family: $font-main, sans-serif
+    font-weight: 300
+    font-size: 16px
+    color: $white
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      width: 0
+      height: 1px
+      background: $lime
+      bottom: -2px
+      left: 50%
+      transform: translateX(-50%)
+      opacity: 0
+      transition: opacity $anim, width $anim  
+    &:hover::before, &:focus::before, &:active::before
+      opacity: 1
+      width: 100%
+      
+

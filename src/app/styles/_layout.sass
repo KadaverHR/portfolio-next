@@ -1,18 +1,37 @@
-* 
+@use '_variables' as *
+*
   margin: 0
   padding: 0
   box-sizing: border-box
 
 body
   font-family: 'NeueMachinaPlain', sans-serif
-  overflow-x: hidden 
+  overflow-x: hidden
+  position: relative
+  background: $body-gradient
+
+main
+  position: relative
+  display: grid
 
 html
   scroll-behavior: smooth
 
-
-  
 .container
+  display: grid
   max-width: 1200px
+  width: 100%
+  padding-left: 30px
+  padding-right: 30px
   margin: 0 auto
-  padding: 0 15px
+  min-width: 320px
+  @media all and ($l)
+    max-width: 991px
+    padding-left: 31px
+    padding-right: 31px
+  @media all and ($m)
+    padding-left: 39px
+    padding-right: 39px
+  @media all and ($s)
+    padding-left: 16px
+    padding-right: 16px
