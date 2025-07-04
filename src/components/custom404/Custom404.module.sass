@@ -1,0 +1,53 @@
+@use '../styles/variables' as * 
+
+.block
+  display: grid
+  justify-content: center
+  min-height: 80vh
+.box
+  display: grid
+  grid-template-columns: 1fr 1fr
+.content
+  display: grid
+  justify-content: center
+  align-items: center
+  gap: 40px
+.left
+  display: grid
+  gap: 40px
+.title
+  font-family: $font-main
+  font-style: italic
+  font-weight: 800
+  font-size: 120px
+  color: $banner-color
+.pretitle
+  font-weight: 300
+  font-size: 120px
+  color: $lime-color
+.subtitle
+  font-family: $font-main
+  font-weight: 400
+  font-size: 50px
+  color: $lime-color
+.button
+  display: grid
+  justify-content: center
+  padding: 12px 17px
+  border-radius: 6px
+  box-shadow: 0 2px 13px 0 rgba(244, 254, 63, 0.48)
+  background: $lime
+  justify-self: start
+  white-space: nowrap
+  gap: 5px
+  grid-auto-flow: column
+  font-size: 20px
+  color: $btn-text-black
+.link_text
+  color: $banner-color
+.contentitem
+  font-family: $font-sec
+  color: $white
+  font-style: italic
+  font-weight: 300
+  font-size: 16px

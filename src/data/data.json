@@ -117,5 +117,34 @@
     }
   ],
   "bannerTitle": "Я Наташа - HTML-верcтальщик",
-  "bannerSubtitle": "Тот тип верстальщика, который:"
+  "bannerSubtitle": "Тот тип верстальщика, который:",
+  "custom404": {
+    "title": "404",
+    "pretitle": "Упс!",
+    "subtitle": " Я опять накосячила! ",
+    "description": {
+      "text": "Кажется, эта страница ушла в undefined. Похоже, кто-то (я) забыла return. Пока я чиню баг с помощью магии console.log('HELP'), можешь вернуться на главную — там хотя бы что-то рендерится.",
+      "decoration": [
+        "undefined",
+        "return",
+        "console.log('HELP')"
+      ]
+    },
+    "img": {
+      "src": "/img/404.png",
+      "alt": "404"
+    },
+    "decorationImg": [
+      {
+        "name": "cross",
+        "src": "/img/cross.svg",
+        "alt": "decoration"
+      },
+      {
+        "name": "circles",
+        "src": "/img/circles.png",
+        "alt": "decoration"
+      }
+    ]
+  }
 }
