@@ -3,15 +3,16 @@
 .block
   display: grid
   justify-content: center
-  min-height: 80vh
 .box
   display: grid
-  grid-template-columns: 1fr 1fr
+  min-height: 80vh
+  align-content: center
 .content
   display: grid
-  justify-content: center
-  align-items: center
+  grid-template-columns: 1fr 1fr
   gap: 40px
+  align-items: stretch
+  align-content: stretch
 .left
   display: grid
   gap: 40px
@@ -51,3 +52,27 @@
   font-style: italic
   font-weight: 300
   font-size: 16px
+.right
+  position: relative
+  display: grid
+  justify-content: center
+  top: -100px
+  right: -50px
+.errorimg
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+.cross
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  width: 592px
+  height: 586px
+  background: #B564D4
+  clip-path: path('M592 106.246L404.701 292.174L592 479.764L483.294 586L295.995 400.081L108.696 586L0 479.764L187.299 292.174L0 106.246L108.696 0L295.995 185.928L483.294 0L592 106.246Z')
+.crossshadow
+  filter: drop-shadow(0 0 60px rgba(161, 104, 213, 0.42)) !important
+.points
+  position: absolute
+  right: 0%
+  top: 50%
