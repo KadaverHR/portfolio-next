@@ -9,12 +9,13 @@ import { Suspense } from 'react';
 const Banner = dynamic(() => import('@/components/banner/Banner'), {
   suspense: true
 });
-
 const About = dynamic(() => import('@/components/about/About'), {
   suspense: true
 });
-
 const Header = dynamic(() => import('@/components/header/Header'), {
+  suspense: true
+});
+const Portfolio = dynamic(() => import('@/components/portfolio/Portfolio'), {
   suspense: true
 });
 
@@ -29,6 +30,7 @@ export default function Home() {
         <Header />
         <Banner />
         <About />
+        <Portfolio />
       </Suspense>
 
     </main>

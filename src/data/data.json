@@ -146,5 +146,150 @@
         "alt": "decoration"
       }
     ]
+  },
+  "portfolio": {
+    "title": "Портфолио",
+    "projects": [
+      {
+        "title": "Сайт адвоката",
+        "desc": "Сделала всё — от логотипа до последних пикселей. Теперь могу защищать проекты в суде",
+        "img": "/img/homukov.png",
+        "strength": 0.01,
+        "lerpEase": 0.2,
+        "links": [
+          {
+            "type": "site",
+            "favicon": "/img/homukov-favicon.png",
+            "link": "https://homukov.ru"
+          }
+        ]
+      },
+      {
+        "title": "Дизайн-студия",
+        "desc": "Дизайнеры нарисовали, я — посчитала пиксели и поплакала над адаптивом",
+        "img": "/img/gattaka.png",
+        "strength": 0.01,
+        "lerpEase": 0.9,
+        "links": [
+          {
+            "type": "site",
+            "favicon": "/img/gattaka-favicon.png",
+            "link": "gattaka.kadaver.site"
+          },
+          {
+            "type": "github",
+            "link": "github.com/kadaver-layout/gattaka.git"
+          }
+        ]
+      },
+      {
+        "title": "Стипендиальные программы «Росатом»",
+        "desc": "Интерфейсов больше, чем у меня закладок в браузере.",
+        "img": "/img/mifi.png",
+        "strength": 0.019,
+        "lerpEase": 0.6,
+        "links": [
+          {
+            "type": "site",
+            "favicon": "/img/mifi-favicon.png",
+            "link": "mifi.kadaver.site"
+          },
+          {
+            "type": "github",
+            "link": "github.com/kadaver-layout/mifi.git"
+          }
+        ]
+      },
+      {
+        "title": "Завод металлургии",
+        "desc": "Пока творила сайт, обнаружила, что металлов больше, чем свойств в CSS",
+        "img": "/img/mtsenskprokat.png",
+        "strength": 0.032,
+        "lerpEase": 0.39,
+        "links": [
+          {
+            "type": "site",
+            "favicon": "/img/mtsenskprokat-favicon.png",
+            "link": "mtsenskprokat.kadaver.site"
+          },
+          {
+            "type": "github",
+            "link": "github.com/kadaver-layout/mtsenskprokat.git"
+          }
+        ]
+      },
+      {
+        "title": "Зоомагазин",
+        "desc": "Сделала интернет-магазин для хвостатых клиентов. Мяу и всё такое.",
+        "img": "/img/venilen.png",
+        "strength": 0.021,
+        "lerpEase": 0.26,
+        "links": [
+          {
+            "type": "site",
+            "favicon": "/img/venilen-favicon.png",
+            "link": "venilen.kadaver.site"
+          },
+          {
+            "type": "github",
+            "link": "github.com/kadaver-layout/venilen.git"
+          }
+        ]
+      },
+      {
+        "title": "Сервис по банкротству",
+        "desc": "Верстала этот сайт, пока не захотелось списать свои силы вместе с долгами",
+        "img": "/img/arbitrage.png",
+        "strength": 0.027,
+        "lerpEase": 0.31,
+        "links": [
+          {
+            "type": "site",
+            "favicon": "/img/arbitrage-favicon.png",
+            "link": "arbitrage.kadaver.site"
+          },
+          {
+            "type": "github",
+            "link": "github.com/kadaver-layout/arbitrage.git"
+          }
+        ]
+      },
+      {
+        "title": "ГироБургер",
+        "desc": "Проект с самой сложной задачей — не заказать еду в процессе",
+        "img": "/img/giro.png",
+        "strength": 0.031,
+        "lerpEase": 0.36,
+        "links": [
+          {
+            "type": "site",
+            "favicon": "/img/giro-favicon.png",
+            "link": "giro57.ru"
+          },
+          {
+            "type": "github",
+            "link": "github.com/kadaver-layout/giro.git"
+          }
+        ]
+      },
+      {
+        "title": "Ярмарка",
+        "desc": "Сайт про деликатесы со всей страны. Все сверстала, а вот пробовать ничего так и не дали",
+        "img": "/img/gifts.png",
+        "strength": 0.039,
+        "lerpEase": 0.4,
+        "links": [
+          {
+            "type": "site",
+            "favicon": "/img/gifts-favicon.png",
+            "link": "dary-yuga.ru"
+          },
+          {
+            "type": "github",
+            "link": "github.com/kadaver-layout/gifts.git"
+          }
+        ]
+      }
+    ]
   }
 }
