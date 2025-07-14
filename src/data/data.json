@@ -155,12 +155,22 @@
         "desc": "Сделала всё — от логотипа до последних пикселей. Теперь могу защищать проекты в суде",
         "img": "/img/homukov.png",
         "strength": 0.01,
-        "lerpEase": 0.2,
+        "decoration": [
+          {
+            "name": "arrow",
+            "class": "rotate90"
+          },
+          {
+            "name": "points",
+            "class": "top"
+          }
+        ],
+        "border-color": "violet",
         "links": [
           {
             "type": "site",
             "favicon": "/img/homukov-favicon.png",
-            "link": "https://homukov.ru"
+            "link": "homukov.ru"
           }
         ]
       },
@@ -169,7 +179,12 @@
         "desc": "Дизайнеры нарисовали, я — посчитала пиксели и поплакала над адаптивом",
         "img": "/img/gattaka.png",
         "strength": 0.01,
-        "lerpEase": 0.9,
+        "decoration": [
+          {
+            "name": "cross"
+          }
+        ],
+        "border-color": "white",
         "links": [
           {
             "type": "site",
@@ -187,7 +202,16 @@
         "desc": "Интерфейсов больше, чем у меня закладок в браузере.",
         "img": "/img/mifi.png",
         "strength": 0.019,
-        "lerpEase": 0.6,
+        "decoration": [
+          {
+            "name": "arrow"
+          },
+          {
+            "name": "points",
+            "class": "bottom"
+          }
+        ],
+        "border-color": "violet",
         "links": [
           {
             "type": "site",
@@ -205,7 +229,12 @@
         "desc": "Пока творила сайт, обнаружила, что металлов больше, чем свойств в CSS",
         "img": "/img/mtsenskprokat.png",
         "strength": 0.032,
-        "lerpEase": 0.39,
+        "decoration": [
+          {
+            "name": "cross"
+          }
+        ],
+        "border-color": "yellow",
         "links": [
           {
             "type": "site",
@@ -223,7 +252,13 @@
         "desc": "Сделала интернет-магазин для хвостатых клиентов. Мяу и всё такое.",
         "img": "/img/venilen.png",
         "strength": 0.021,
-        "lerpEase": 0.26,
+        "decoration": [
+          {
+            "name": "arrow",
+            "class": "rotate-90"
+          }
+        ],
+        "border-color": "yellow",
         "links": [
           {
             "type": "site",
@@ -241,7 +276,13 @@
         "desc": "Верстала этот сайт, пока не захотелось списать свои силы вместе с долгами",
         "img": "/img/arbitrage.png",
         "strength": 0.027,
-        "lerpEase": 0.31,
+        "decoration": [
+          {
+            "name": "arrow",
+            "class": "rotate90"
+          }
+        ],
+        "border-color": "violet",
         "links": [
           {
             "type": "site",
@@ -259,7 +300,15 @@
         "desc": "Проект с самой сложной задачей — не заказать еду в процессе",
         "img": "/img/giro.png",
         "strength": 0.031,
-        "lerpEase": 0.36,
+        "decoration": [
+          {
+            "name": "cross"
+          },
+          {
+            "name": "circles"
+          }
+        ],
+        "border-color": "white",
         "links": [
           {
             "type": "site",
@@ -277,7 +326,16 @@
         "desc": "Сайт про деликатесы со всей страны. Все сверстала, а вот пробовать ничего так и не дали",
         "img": "/img/gifts.png",
         "strength": 0.039,
-        "lerpEase": 0.4,
+        "decoration": [
+          {
+            "name": "arrow"
+          },
+          {
+            "name": "points",
+            "class": "bottom"
+          }
+        ],
+        "border-color": "violet",
         "links": [
           {
             "type": "site",
